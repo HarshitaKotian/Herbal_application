@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: transparent;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:rgb(240, 234, 234);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ul li a.active,ul li a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+.heading h3{
+    font-size: 40px;
+    color: rgb(37, 177, 9);
+    text-shadow: 8px 6px 6px rgb(206, 206, 130);
+    text-decoration: none;
+    font-style: italic;
+    line-height: 80px;
+}
+    
+    
+
+
+
+
+
+
+#stay_healthy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+    
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 450px;
+    background-color: rgba(207, 228, 196, 0.5);
+    border:1px solid #ececec;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img{
+    width: 100%;
+    height: 200px;;
+}
+.img img{
+    width:100%;
+    height:100%;
+    padding: 8px;
+    object-position: center;
+}
+.text{
+    padding:20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3.title{
+    font-size:2rem;
+    font-weight: 500;
+    color: #db3c3c;
+    text-align: center;
+}
+h3.title:hover{
+    color: rgb(74, 180, 88);
+    text-shadow: #db3c3c;
+    transition: all ease 0.3s;
+}
+.text p{
+    color:purple;
+    font: size 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin:20px 0;
+
+}
+.text a{
+    color:rgb(11, 32, 192);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 15px;
+}
+.text a:hover{
+    color:rgb(252, 54, 74);
+    transition: all ease 0.3s;
+}

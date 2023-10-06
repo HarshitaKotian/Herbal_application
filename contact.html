@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mainpagestyle.css">  
+
+    <style>
+        body {
+            background-color: #ddeaf5; 
+            /* font-family: sans-serif; */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 20px;
+            width: 60%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #09960c; /* Change the button color on hover */
+        }
+        /* Make the form responsive */
+        @media (max-width: 576px) {
+            .container {
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <label class="logo">VIRUDHI </label>
+        <ul>
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="#">REMEDIES</a></li> 
+            <!-- <li><a href="#">AVAILABILITY</a></li> -->
+            <li><a href="daily.html">DAILY ROUTINE</a></li>
+            <li><a href="contact.html" class="active">FEEDBACK</a></li>   
+            <!-- <li><a href="#">LOGOUT</a></li>      -->
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div><br>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div><br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div><br>
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback" id="" cols="10" rows="5" placeholder="Write any queries or feedback" class="form-group form-control"></textarea><br>
+            <center> <button type="submit" class="btn btn-primary px-4 ">Submit</button></center>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery script links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript for handling form submission (you can customize this part)
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // You can add your email sending logic here.
+            // For example, you can use AJAX to send data to a server-side script that sends the email.
+
+            // Display a success message or redirect the user to a thank you page.
+            alert('Your message has been sent successfully!');
+        });
+    </script>
+</body>
+</html>

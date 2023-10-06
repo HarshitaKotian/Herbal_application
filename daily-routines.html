@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mainpagestyle.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        /* Basic CSS styling */
+   
+   
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: #f0f0f0; */
+        }
+        
+        .containers {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            /* background-color: #fff; */
+        }
+        
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            animation: fadeIn 2s ease-in-out;
+            
+            position: relative;
+            height:200px;
+        }
+        .box:nth-child(odd) {
+            float: left;
+            clear: left;
+        }
+
+        .box:nth-child(even) {
+            flex-direction: row-reverse;
+            float: right;
+            clear: right;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .float-right {
+            float: right;
+        }
+
+        /* Add a hover effect to make the transition more noticeable */
+        
+        .box .description {
+            position: absolute;
+            top: 0;
+            left: 100%; /* Position to the right */
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Show the description on hover */
+        .box:hover .description {
+            /* display: block; */
+            left: 0;
+            opacity: 1;
+        }
+        .box:hover {
+           box-shadow: 5px 10px #888888;
+        }
+        .box:not(:hover) .description {
+            left: 100%; /* Move description back to the right */
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">VIRUDHI </label>
+        <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="#">REMEDIES</a></li> 
+            <!-- <li><a href="#">AVAILABILITY</a></li> -->
+            <li><a href="daily-routines.html">DAILY ROUTINE</a></li>
+            <li><a href="contact.html">FEEDBACK</a></li>   
+            <!-- <li><a href="#">LOGOUT</a></li>      -->
+        </ul>
+    </nav>
+    <div class="containers">
+        <!-- Div 1 -->
+        <div class="box">
+            <h2>Div 1 Heading</h2><br><br>
+            <img src="image1.jpg" alt="Image 1"><br> <br>
+            <p >Description for Div 1 goes . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repellat fugit ullam corporis dicta porro dolores libero, ex recusandae voluptatem eligendi? Facilis id necessitatibus repudiandae illo quibusdam totam corrupti laborum.</p>
+        </div>
+
+        <!-- Div 2 -->
+        <div class="box float-right">
+            <h2>Div 2 Heading</h2>
+            <img src="image2.jpg" alt="Image 2">
+            <p class="description">Description for Div 2 goes here.</p>
+        </div>
+
+        <!-- Div 3 -->
+        <div class="box">
+            <h2>Div 3 Heading</h2>
+            <img src="image3.jpg" alt="Image 3">
+            <p class="description">Description for Div 3 goes here.</p>
+        </div>
+        
+        <!-- Add more divs as needed -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
